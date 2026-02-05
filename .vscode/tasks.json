@@ -16,6 +16,16 @@
       "problemMatcher": []
     },
     {
+      "label": "Format: black",
+      "type": "shell",
+      "command": "${workspaceFolder}/venv/bin/python -m black",
+      "args": ["."],
+      "group": "none",
+      "presentation": {
+        "reveal": "always"
+      }
+    },
+    {
       "label": "NPM: start",
       "type": "shell",
       "command": "npm",
